@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Helping Money</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="css/4c1c5b05a01ae3ca.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/4c1c5b05a01ae3ca.css" data-n-g="">
+    <link rel="stylesheet" href="css/style.css" data-n-g="">
+    <style data-styled="active" data-styled-version="5.3.5"></style>
+    <link rel=stylesheet href="slider/slider.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+</head>
+<body>
+<div id="__next" data-reactroot="">
+    <header class="sc-gn0pck-0 fYLeKM">
+        <div class="sc-gn0pck-1 xebFS">
+            <div class="sc-gn0pck-2 boWQfC"><a data-testid="header-logo" href="/" class="sc-gn0pck-3 eBGuvt"><span
+                    style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span
+                    style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img
+                    style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                    alt="" aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27243%27%20height=%2734%27/%3e"></span><img
+                    alt="HM Logo" srcset="image/hm-logo.svg 1x, image/hm-logo.svg 2x" src="/hm-logo.svg"
+                    decoding="async"
+                    data-nimg="intrinsic" class="sc-gn0pck-4 kkmEGa"
+                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"></span></a>
+            </div>
+        </div>
+    </header>
+    <main aria-label="main">
+        <section class="sc-sykz88-0 bSSTqr sc-e1bsxr-1 ftINvo">
+            <div class="sc-sykz88-1 bBWgXj">
+                <h1 class="sc-iro7cu-0 eQQjiv sc-zct84v-5 dtXVbG" data-testid="payoff-loan-title}">Ivar S. is investing
+                    <b>$10,000</b> and potentially getting <b><span id="inc"></span></b> in return.</h1>
+                <h1 class="sc-iro7cu-0 eQQjiv sc-zct84v-5 dtXVbG" data-testid="payoff-loan-title}">Expected return
+                    <b><span id="incPrc"></span>%</b></h1>
+                <canvas id="myChart" width="400" height="200"></canvas>
+                <script>
+                    Chart.register(ChartDataLabels);
+                    const ctx = document.getElementById('myChart');
+                    const myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Tier 1', 'Tier 2', 'Tier 3', 'Tier 4', 'Tier 5'],
+                            datasets: [{
+                                label: '',
+                                data: [2.54, 3.84, 5.45, 6.88, 7.73],
+                                backgroundColor: [
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(255, 206, 86, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(255, 99, 132, 0.2)',
+                                ],
+                                borderColor: [
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 99, 132, 1)',
+                                ],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                        callback: function (value, ctx) {
+                                            return value + '%'
+                                        },
+                                        font: {
+                                            size: 20,
+                                        }
+                                    }
+                                },
+                                x: {
+                                    ticks: {
+                                        font: {
+                                            size: 20,
+                                        }
+                                    }
+                                }
+                            },
+                            plugins: {
+                                legend: {
+                                    display: false
+                                },
+                                datalabels: {
+                                    // anchor: 'end',
+                                    // align: 'top',
+                                    formatter: function (value, context) {
+                                        return value + '%';
+                                    },
+                                    font: {
+//                                        weight: 'bold',
+                                        size: '20'
+                                    }
+                                }
+                            }
+                        }
+                    });
+                </script>
+
+                <table class="sc-j3xecs-2 cqqBNA">
+                    <thead>
+                    <tr>
+                        <th class="sc-j3xecs-3 kAqPEx"><input id="t1" class="dist-inp" type="text" value="$100"/></th>
+                        <th class="sc-j3xecs-3 kAqPEx"><input id="t2" class="dist-inp" type="text" value="$100"/></th>
+                        <th class="sc-j3xecs-3 kAqPEx"><input id="t3" class="dist-inp" type="text" value="$100"/></th>
+                        <th class="sc-j3xecs-3 kAqPEx"><input id="t4" class="dist-inp" type="text" value="$100"/></th>
+                        <th class="sc-j3xecs-3 kAqPEx"><input id="t5" class="dist-inp" type="text" value="$100"/></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+
+                    </tbody>
+                </table>
+
+                <div class="block">
+                    <span class="pull-left"><h1><img src="image/safe.png"
+                                                     style="width: 50px; vertical-align:middle;"/><span
+                            style="color: #4BC0C0FF">&nbsp;&nbsp;&nbsp;SAFER</span></h1></span>
+                    <span class="pull-right"><h1><span style="color: #FF6384FF">RISKIER&nbsp;&nbsp;&nbsp;</span><img
+                            src="image/risky.png" style="width: 50px; vertical-align:middle;"/></h1></span>
+                    <div style='clear:both'></div>
+                </div>
+                <p><input id="rsk" type="text" class="slider1" name="value1" value="50" style="display: none" color="#ff0000">
+                </p>
+
+                <div class="block" style="margin: auto;width: 50%;text-align: center;">
+                    <a class="sc-15aqtvt-0 hgpdlw sc-mpbdon-1 kOFLbj" data-testid="hero-button" href="#"
+                       style="margin: auto;width: 50%;">Invest</a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+</div>
+<script type="text/javascript" src="slider/sliders.js"></script>
+<script type="text/javascript" src="script/custom.js"></script>
+</body>
+</html>

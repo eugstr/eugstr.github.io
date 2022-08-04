@@ -1,0 +1,61 @@
+@font-face {
+    font-family: mabry-pro-light;
+    font-display: fallback;
+    src: url(https://happymoney.com/_next/static/media/MabryPro-Light.f218b252.woff) format("woff"), url(https://happymoney.com/_next/static/media/MabryPro-Light.18e53b01.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: mabry-pro-regular;
+    font-display: fallback;
+    src: url(https://happymoney.com/_next/static/media/MabryPro-Regular.10362303.woff) format("woff"), url(https://happymoney.com/_next/static/media/MabryPro-Regular.10362303.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: mabry-pro-medium;
+    font-display: fallback;
+    src: url(https://happymoney.com/_next/static/media/MabryPro-Medium.f2cbf5eb.woff) format("woff"), url(https://happymoney.com/_next/static/media/MabryPro-Medium.0f6c8c5a.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: mabry-pro-bold;
+    font-display: fallback;
+    src: url(https://happymoney.com/_next/static/media/MabryPro-Bold.873a07a9.woff) format("woff"), url(https://happymoney.com/_next/static/media/MabryPro-Bold.873a07a9.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: gt-america-regular;
+    font-display: fallback;
+    src: url(https://happymoney.com/_next/static/media/gt-america-regular.f0c3df66.woff) format("woff"), url(https://happymoney.com/_next/static/media/gt-america-regular.f0c3df66.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: gt-america-medium;
+    font-display: fallback;
+    src: url(https://happymoney.com/_next/static/media/gt-america-medium.c5b34655.woff) format("woff"), url(https://happymoney.com/_next/static/media/gt-america-medium.c7e5f8ca.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: inter-regular;
+    font-weight: 400;
+    font-display: fallback;
+    src: url(https://happymoney.com/_next/static/media/Inter-Regular.18dba28a.eot);
+    src: url(https://happymoney.com/_next/static/media/Inter-Regular.dda94711.woff2) format("woff2"), url(https://happymoney.com/_next/static/media/Inter-Regular.91e59f8f.woff) format("woff"), url(https://happymoney.com/_next/static/media/Inter-Regular.2a25e95b.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: inter-medium;
+    font-weight: 500;
+    font-display: fallback;
+    src: url(https://happymoney.com/_next/static/media/Inter-Medium.834cfb5d.eot);
+    src: url(https://happymoney.com/_next/static/media/Inter-Medium.82b81898.woff2) format("woff2"), url(https://happymoney.com/_next/static/media/Inter-Medium.21f51000.woff) format("woff"), url(https://happymoney.com/_next/static/media/Inter-Medium.f030c0e8.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: inter-bold;
+    font-weight: 700;
+    font-display: fallback;
+    src: url(https://happymoney.com/_next/static/media/Inter-Bold.aa4d0813.eot);
+    src: url(https://happymoney.com/_next/static/media/Inter-Bold.b19f66e1.woff2) format("woff2"), url(https://happymoney.com/_next/static/media/Inter-Bold.495ff245.woff) format("woff"), url(https://happymoney.com/_next/static/media/Inter-Bold.e0cc0bf0.ttf) format("truetype")
+}
+
+/*# sourceMappingURL=4c1c5b05a01ae3ca.css.map*/
